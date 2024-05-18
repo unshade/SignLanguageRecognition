@@ -16,3 +16,9 @@ labels = dataToTrain['label'].values
 unique_labels = np.sort(pd.unique(labels))
 mapping = dict(zip(unique_labels, alphabet))
 print(mapping)
+
+# Prepare data for training
+# Drop the label column from the training data
+trainingImages = dataToTrain.drop('label', axis=1).values
+# Each image is 28x28 pixels
+trainingImages = [np.reshape(image, (28, 28)) for image in trainingImages]
