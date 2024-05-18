@@ -32,11 +32,13 @@ opencv-python==4.9.0.80
 opt-einsum==3.3.0
 optree==0.11.0
 packaging==24.0
+pandas==2.2.2
 pillow==10.3.0
 protobuf==4.25.3
 Pygments==2.18.0
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
+pytz==2024.1
 requests==2.31.0
 rich==13.7.1
 scikit-image==0.22.0
@@ -51,6 +53,7 @@ termcolor==2.4.0
 threadpoolctl==3.5.0
 tifffile==2024.5.10
 typing_extensions==4.11.0
+tzdata==2024.1
 urllib3==2.2.1
 Werkzeug==3.0.3
 wrapt==1.16.0
