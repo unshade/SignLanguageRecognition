@@ -27,7 +27,7 @@ images_train, images_test, labels_train, labels_test = train_test_split(images, 
 
 batch_size = 128
 num_classes = 24
-epochs = 10
+epochs = 50
 
 images_train = images_train / 255
 images_test = images_test / 255
