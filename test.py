@@ -4,11 +4,10 @@ import numpy as np
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 
-
 dataToTest = pd.read_csv('./data/sign_mnist_test/sign_mnist_test.csv')
 
 test_labels = dataToTest['label']
-dataToTest.drop('label', axis = 1, inplace = True)
+dataToTest.drop('label', axis=1, inplace=True)
 test_images = dataToTest.values
 label_binrizer = LabelBinarizer()
 test_labels = label_binrizer.fit_transform(test_labels)
